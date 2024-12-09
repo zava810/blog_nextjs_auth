@@ -27,13 +27,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## steps How this repo got generated
 1. goto https://fajarwz.com/blog/email-authentication-and-verification-in-nextjs-14-with-next-auth-and-prisma/
 2. npx create-next-app@latest blog_nextjs_auth
-Select the following options during the prompts:
-TypeScript: Yes
-ESLint: Yes
-Tailwind CSS: Yes
-src/ Directory: Yes
-App Router: Yes
-Custom Import Alias (@/*): No
+  1. Select the following options during the prompts:
+  1. TypeScript: Yes
+  1. ESLint: Yes
+  1. Tailwind CSS: Yes
+  1. src/ Directory: Yes
+  1. App Router: Yes
+  1. Custom Import Alias (@/*): No
 3. pnpm i ; pnpm dev
 4. check localhost:3000 openińg
 5. pnpm install prisma --save-dev
@@ -41,22 +41,22 @@ Custom Import Alias (@/*): No
 7. npx prisma init
 8. update your prisma/schema.prisma
 9. https://vercel.com/guides/unable-to-find-github-repository
-L. If the repository is missing, click “Configure GitHub App” to see if the GitHub repository has access granted to Vercel.
-J. configure from your GitHub Profile > Settings > Applications > vercel . give access to this blog_nextjs_auth repo 
-B. psql -U postgres ; CREATE DATABASE blog_nextjs_auth;
-W. in .env set postgres param : DATABASE_URL="postgresql://<username>:<password>@localhost:5432/ blog_nextjs_auth?schema=public"
-E. npx prisma db push
-F. 
+1. If the repository is missing, click “Configure GitHub App” to see if the GitHub repository has access granted to Vercel.
+1. configure from your GitHub Profile > Settings > Applications > vercel . give access to this blog_nextjs_auth repo 
+1. psql -U postgres ; CREATE DATABASE blog_nextjs_auth;
+1. in .env set postgres param : DATABASE_URL="postgresql://<username>:<password>@localhost:5432/ blog_nextjs_auth?schema=public"
+1. npx prisma db push
+1. 
 
 ### supabase projects
-. https://github.com/salmandotweb/nextjs-supabase-boilerplate
-. https://github.com/imbhargav5/nextbase-nextjs-supabase-starter
+1. https://github.com/salmandotweb/nextjs-supabase-boilerplate
+1. https://github.com/imbhargav5/nextbase-nextjs-supabase-starter
 #### best githubber for supabase + nextjs
-. https://www.youtube.com/watch?v=iJpTo1Kwb0g
-. https://www.youtube.com/@DailyWebCoding/playlists?view=1&sort=dd&flow=grid
-. https://github.com/Chensokheng?tab=repositories&q=next&type=&language=&sort=
+1. https://www.youtube.com/watch?v=iJpTo1Kwb0g
+1. https://www.youtube.com/@DailyWebCoding/playlists?view=1&sort=dd&flow=grid
+1. https://github.com/Chensokheng?tab=repositories&q=next&type=&language=&sort=
 
 ### saas boilerplates
-. https://www.saaspegasus.com/guides/saas-boilerplates-and-starter-kits/
-. https://www.apptension.com/saas-boilerplate
-. https://github.com/apptension/saas-boilerplate
+1. https://www.saaspegasus.com/guides/saas-boilerplates-and-starter-kits/
+1. https://www.apptension.com/saas-boilerplate
+1. https://github.com/apptension/saas-boilerplate

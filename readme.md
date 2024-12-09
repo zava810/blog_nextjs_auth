@@ -46,8 +46,25 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 1. psql -U postgres ; CREATE DATABASE blog_nextjs_auth;
 1. in .env set postgres param : DATABASE_URL="postgresql://<username>:<password>@localhost:5432/ blog_nextjs_auth?schema=public"
 1. npx prisma db push
-1. 
-
+1. pnpm install zod
+1. npm install bcryptjs @types/bcryptjs
+  1. this library enables secure password hashing, safeguarding user credentials in our database.
+  1. authentication logic by installing bcryptjs
+1. npm install nodemailer @types/nodemailer --legacy-peer-deps
+1. npm install next-auth@beta
+  1. openssl rand -base64 32
+  1. This command produces a cryptographically secure random string
+  1. which you can then assign to AUTH_SECRET in your .env file. Here’s an example snippet
+  1. AUTH_SECRET=
+  1. in .gitignore .env must be there
+1. setting up nextàuth configuration
+  1. // src/auth.config.ts
+1. Step 8: Implementing Authentication Logic
+  1. // src/auth.ts
+1. Step 9: Middleware for Authentication
+  1. // src/middleware.ts
+1. Step 10: Routing Authentication API Endpoints
+  1. // src/app/api/auth/[...nextauth]/route.ts
 ### supabase projects
 1. https://github.com/salmandotweb/nextjs-supabase-boilerplate
 1. https://github.com/imbhargav5/nextbase-nextjs-supabase-starter

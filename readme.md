@@ -40,7 +40,23 @@ Custom Import Alias (@/*): No
 6. pnpm install @next-auth/prisma-adapter
 7. npx prisma init
 8. update your prisma/schema.prisma
-9. psql -U postgres ; CREATE DATABASE blog_nextjs_auth;
-8. in .env set postgres param : DATABASE_URL="postgresql://<username>:<password>@localhost:5432/ blog_nextjs_auth?schema=public"
-9. npx prisma db push
+9. https://vercel.com/guides/unable-to-find-github-repository
+L. If the repository is missing, click “Configure GitHub App” to see if the GitHub repository has access granted to Vercel.
+J. configure from your GitHub Profile > Settings > Applications > vercel . give access to this blog_nextjs_auth repo 
+B. psql -U postgres ; CREATE DATABASE blog_nextjs_auth;
+W. in .env set postgres param : DATABASE_URL="postgresql://<username>:<password>@localhost:5432/ blog_nextjs_auth?schema=public"
+E. npx prisma db push
+F. 
 
+### supabase projects
+. https://github.com/salmandotweb/nextjs-supabase-boilerplate
+. https://github.com/imbhargav5/nextbase-nextjs-supabase-starter
+#### best githubber for supabase + nextjs
+. https://www.youtube.com/watch?v=iJpTo1Kwb0g
+. https://www.youtube.com/@DailyWebCoding/playlists?view=1&sort=dd&flow=grid
+. https://github.com/Chensokheng?tab=repositories&q=next&type=&language=&sort=
+
+### saas boilerplates
+. https://www.saaspegasus.com/guides/saas-boilerplates-and-starter-kits/
+. https://www.apptension.com/saas-boilerplate
+. https://github.com/apptension/saas-boilerplate

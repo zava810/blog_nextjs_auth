@@ -4,8 +4,13 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 // Generate the Prisma Client in JavaScript
-generator client { provider = "prisma-client-js" }
-datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+generator client {
+	provider = "prisma-client-js"
+}
+datasource db {
+	provider = "postgresql"
+	url = env("DATABASE_URL")
+}
 // This block of code defines a User model
 model User {
   id              String    @id @default(cuid()) // primary key with CUID
